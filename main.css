@@ -1,0 +1,58 @@
+.nav-bar {
+	margin: 0;
+}
+
+.game-area {
+	width: 100%;
+}
+
+.game-area > .board-wrapper,
+.game-area > .board-wrapper > .row-wrapper {
+	margin: 0;
+	padding: 0;
+}
+
+.game-area > .board-wrapper > .row-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.game-area > .board-wrapper > .row-wrapper > .spot {
+	display: flex;
+	border: 1px solid;
+	flex-direction: column;
+	flex: 1;
+	height: 30px;
+	background: #ddd;
+	text-align: center;
+	line-height: 30px;
+}
+
+.game-area > .board-wrapper > .row-wrapper > .spot:hover {
+	background: #aee;
+}
+
+.game-area > .board-wrapper > .row-wrapper > .spot.cleared {
+	background: #5454dd;
+}
+
+.game-area > .board-wrapper > .row-wrapper > .spot.mine-flagged {
+	background: #772211;
+}
+
+.game-area > .board-wrapper > .row-wrapper > .spot.mine {
+	background: #aa2233;
+}
+
+.level-bar .step .input-content {
+	display: none;
+}
+
+.level-bar .step.active .input-content {
+	display: block;
+}
+
+.status-wrapper .status span {
+	font-size: 24px;
+	line-height: 24px;
+}
